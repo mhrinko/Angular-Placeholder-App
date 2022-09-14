@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60vw;
+}
+
+mat-form-field.filter {
+    width: 40vw;
+}
+
+.filter-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+<div class="container" (click)="toggleAdditionalInfo()" [ngClass]="{active: isAdditionalInfoVisible}">
+    <div *ngIf="blogPost">
+        <h2>{{blogPost.title}}</h2>
+        <p>{{blogPost.body}}</p>
+        <div *ngIf="isAdditionalInfoVisible">
+            <p><strong>Id:</strong>{{blogPost.id}}</p>
+            <p><strong>User Id:</strong>{{blogPost.userId}}</p>
+        </div>
+    </div>
+    <p *ngIf="!blogPost"><strong>No post loaded</strong></p>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <form class="filter-container" [formGroup]="formGroup">
+        <mat-form-field appearance="outline" color="primary" class="filter">
+            <mat-label>Filter titles by text</mat-label>
+            <input matInput (input)="onInput()" formControlName="filterText">
+        </mat-form-field>
+    </form>
+    <div class="list-container">
+        <app-blog-post-list></app-blog-post-list>
+    </div>
+</div>

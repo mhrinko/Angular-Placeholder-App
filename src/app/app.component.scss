@@ -1,0 +1,12 @@
+@import './styles/variables.scss';
+
+.env-warning-label {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:100;
+    justify-content: center;
+    text-align: center;
+    background-color: $light-amber-primary;
+    border-top: 1px solid $primary-amber;
+}

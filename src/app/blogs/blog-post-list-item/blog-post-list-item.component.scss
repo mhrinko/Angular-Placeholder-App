@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.container {
+    width: 200px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    background-color: $light-purple-primary;
+    border-radius: 6px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: hidden;
+
+    --outline: 1px solid lightgrey;
+    outline: var(--outline);
+    transition: 
+        outline-width 50ms ease,
+        outline-color 70ms ease;
+}
+
+.container.active {
+    overflow-y: auto;
+    outline: 2px solid $primary-purple !important;
+}
+
+.container:hover,
+.container:focus {
+    outline: var(--outline);
+    outline-width: 2px;
+    outline-color: $dark-outline;
+}
+
+h2 {
+    color: $dark-primary-text;
+    background-color: $light-purple-secondary;
+    border-left: 6px solid $primary-purple  !important;
+    border-left-width: 6px !important;
+    border-left-style: solid !important;
+    border-radius: 4px;
+    padding-left: 4px;
+}

@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+
+$dark-primary-text: rgba(black, 0.87);
+
+$light-purple-primary: mat.get-color-from-palette(mat.$deep-purple-palette, 50);
+$light-purple-secondary: mat.get-color-from-palette(mat.$deep-purple-palette, 100);
+$primary-purple: mat.get-color-from-palette(mat.$deep-purple-palette, 500);
+
+$light-amber-primary: mat.get-color-from-palette(mat.$amber-palette, 50);
+$primary-amber: mat.get-color-from-palette(mat.$amber-palette, 500);
+
+$dark-outline: black;
