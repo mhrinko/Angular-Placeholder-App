@@ -27,7 +27,6 @@ import * as fromApp from './store/app.reducer';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        BrowserAnimationsModule,
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
